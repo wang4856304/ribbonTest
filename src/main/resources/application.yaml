@@ -1,0 +1,20 @@
+spring:
+   profiles:
+      active: dev
+   cloud:
+      consul:
+        host: 127.0.0.1
+        port: 8500
+        discovery:
+        instance-id: consul-miya-client
+        tags: dev
+   application:
+      name: consul-miya-client
+
+consul:
+   host: 127.0.0.1
+   port: 8500
+
+server:
+   #address: 192.168.0.112
+   port: 9902
